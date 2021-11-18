@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<style>
+input[type=text]{
+  width: 43%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+select{
+  width: 43%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.advsettings{
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+p{
+  color: #193B65;
+}
+</style>
+<body>
+
+<h3>2.4 GHz</h3>
+
+<div>
+	<label for="wifiname">Wi-Fi Name</label>
+	<input class="basic" type="text" id="wifiname" name="wifiname" placeholder="Type your Wifi name here">
+
+	<label for="wifipw">Wi-Fi Password</label>
+	<input class="basic" type="text" id="wifipw" name="wifipw" placeholder="Type password here">
+</div>
+
+<p>Advanced Settings</p>
+
+<div class="advsettings">  	
+	
+	<div>
+	<label>SSID Number</label>
+	</div>
+	<div>
+	<select id="ssid" name="ssid">
+	  <option value="1">1</option>
+	  <option value="2">2</option>
+	  <option value="3">3</option>
+	</select>
+	</div>
+	
+	<div>
+	<label for="authentication">Authentication</label>
+	</div>
+	<div>
+	<select id="authentication" name="authentication">
+	  <option value="WPA/WPA2">WPA/WPA2</option>
+	  <option value="PBA">PBA</option>
+	  <option value="MFA">MFA</option>
+	</select>
+	</div>
+	
+	<div>
+	<label for="encrypt">Encryption Mode</label>
+	</div>
+	<div>
+	<select id="encrypt" name="encrypt">
+	  <option value="TXIP & AES">TXIP & AES</option>
+	</select>
+	</div>
+	
+	<div>
+	<label for="wma">WMA Key Interval</label>
+	</div>
+	<div>
+	<input type="text" value="3600">
+	</div>
+
+</div>
+
+</body>
+</html>
+
+
